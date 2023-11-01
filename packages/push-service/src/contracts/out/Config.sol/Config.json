@@ -1,0 +1,317 @@
+{
+  "abi": [],
+  "bytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "deployedBytecode": {
+    "object": "0x",
+    "linkReferences": {}
+  },
+  "ast": {
+    "absolutePath": "src/common/Config.sol",
+    "id": 57678,
+    "exportedSymbols": {
+      "BLOCKS_PER_INTERVAL": [
+        57671
+      ],
+      "INITIAL_CANVAS_DIM": [
+        57674
+      ],
+      "VRGDA_PRICE_DECAY": [
+        57662
+      ],
+      "VRGDA_TARGET_PRICE": [
+        57668
+      ],
+      "VRGDA_UNITS_PER_INTERVAL": [
+        57665
+      ],
+      "WAD_CANVAS_GROWTH_ROOT": [
+        57677
+      ]
+    },
+    "nodeType": "SourceUnit",
+    "src": "32:348:146",
+    "nodes": [
+      {
+        "id": 57659,
+        "nodeType": "PragmaDirective",
+        "src": "32:24:146",
+        "nodes": [],
+        "literals": [
+          "solidity",
+          ">=",
+          "0.8",
+          ".0"
+        ]
+      },
+      {
+        "id": 57662,
+        "nodeType": "VariableDeclaration",
+        "src": "58:42:146",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "VRGDA_PRICE_DECAY",
+        "nameLocation": "74:17:146",
+        "scope": 57678,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_int256",
+          "typeString": "int256"
+        },
+        "typeName": {
+          "id": 57660,
+          "name": "int256",
+          "nodeType": "ElementaryTypeName",
+          "src": "58:6:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_int256",
+            "typeString": "int256"
+          }
+        },
+        "value": {
+          "hexValue": "302e35653138",
+          "id": 57661,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "94:6:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_500000000000000000_by_1",
+            "typeString": "int_const 500000000000000000"
+          },
+          "value": "0.5e18"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 57665,
+        "nodeType": "VariableDeclaration",
+        "src": "102:44:146",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "VRGDA_UNITS_PER_INTERVAL",
+        "nameLocation": "118:24:146",
+        "scope": 57678,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_uint16",
+          "typeString": "uint16"
+        },
+        "typeName": {
+          "id": 57663,
+          "name": "uint16",
+          "nodeType": "ElementaryTypeName",
+          "src": "102:6:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_uint16",
+            "typeString": "uint16"
+          }
+        },
+        "value": {
+          "hexValue": "33",
+          "id": 57664,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "145:1:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_3_by_1",
+            "typeString": "int_const 3"
+          },
+          "value": "3"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 57668,
+        "nodeType": "VariableDeclaration",
+        "src": "148:47:146",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "VRGDA_TARGET_PRICE",
+        "nameLocation": "164:18:146",
+        "scope": 57678,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_int256",
+          "typeString": "int256"
+        },
+        "typeName": {
+          "id": 57666,
+          "name": "int256",
+          "nodeType": "ElementaryTypeName",
+          "src": "148:6:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_int256",
+            "typeString": "int256"
+          }
+        },
+        "value": {
+          "hexValue": "302e3030303136653138",
+          "id": 57667,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "185:10:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_160000000000000_by_1",
+            "typeString": "int_const 160000000000000"
+          },
+          "value": "0.00016e18"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 57671,
+        "nodeType": "VariableDeclaration",
+        "src": "197:43:146",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "BLOCKS_PER_INTERVAL",
+        "nameLocation": "213:19:146",
+        "scope": 57678,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_uint16",
+          "typeString": "uint16"
+        },
+        "typeName": {
+          "id": 57669,
+          "name": "uint16",
+          "nodeType": "ElementaryTypeName",
+          "src": "197:6:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_uint16",
+            "typeString": "uint16"
+          }
+        },
+        "value": {
+          "hexValue": "3433323030",
+          "id": 57670,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "235:5:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_43200_by_1",
+            "typeString": "int_const 43200"
+          },
+          "value": "43200"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 57674,
+        "nodeType": "VariableDeclaration",
+        "src": "274:39:146",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "INITIAL_CANVAS_DIM",
+        "nameLocation": "290:18:146",
+        "scope": 57678,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_uint16",
+          "typeString": "uint16"
+        },
+        "typeName": {
+          "id": 57672,
+          "name": "uint16",
+          "nodeType": "ElementaryTypeName",
+          "src": "274:6:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_uint16",
+            "typeString": "uint16"
+          }
+        },
+        "value": {
+          "hexValue": "3335",
+          "id": 57673,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "311:2:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_35_by_1",
+            "typeString": "int_const 35"
+          },
+          "value": "35"
+        },
+        "visibility": "internal"
+      },
+      {
+        "id": 57677,
+        "nodeType": "VariableDeclaration",
+        "src": "330:48:146",
+        "nodes": [],
+        "constant": true,
+        "mutability": "constant",
+        "name": "WAD_CANVAS_GROWTH_ROOT",
+        "nameLocation": "346:22:146",
+        "scope": 57678,
+        "stateVariable": false,
+        "storageLocation": "default",
+        "typeDescriptions": {
+          "typeIdentifier": "t_int256",
+          "typeString": "int256"
+        },
+        "typeName": {
+          "id": 57675,
+          "name": "int256",
+          "nodeType": "ElementaryTypeName",
+          "src": "330:6:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_int256",
+            "typeString": "int256"
+          }
+        },
+        "value": {
+          "hexValue": "312e3434653138",
+          "id": 57676,
+          "isConstant": false,
+          "isLValue": false,
+          "isPure": true,
+          "kind": "number",
+          "lValueRequested": false,
+          "nodeType": "Literal",
+          "src": "371:7:146",
+          "typeDescriptions": {
+            "typeIdentifier": "t_rational_1440000000000000000_by_1",
+            "typeString": "int_const 1440000000000000000"
+          },
+          "value": "1.44e18"
+        },
+        "visibility": "internal"
+      }
+    ],
+    "license": "MIT"
+  },
+  "id": 146
+}

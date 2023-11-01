@@ -1,0 +1,36 @@
+[profile.default]
+solc = "0.8.21"
+ffi = false
+fuzz_runs = 512
+optimizer = true
+optimizer_runs = 3000
+verbosity = 2
+src = "src"
+test = "test"
+out = "out"
+via_ir = false
+allow_paths = [
+  # pnpm symlinks to the project root's node_modules
+  "../../node_modules",
+  # template uses linked mud packages from within the mud monorepo
+  "../../../../packages",
+  # projects created from this template and using linked mud packages
+  "../../../mud/packages",
+]
+extra_output_files = [
+  "abi",
+  "evm.bytecode"
+]
+fs_permissions = [{ access = "read", path = "./"}]
+memory_limit = 43554432
+
+[profile.lattice-testnet]
+eth_rpc_url = "https://follower.testnet-chain.linfra.xyz"
+
+[invariant]
+fail_on_revert = true
+runs = 1000
+depth = 10
+
+[profile.base-mainnet]
+eth_rpc_url = "https://base-mainnet.blastapi.io/1b4ab199-b218-4e35-a435-a71ef4dfed8d"

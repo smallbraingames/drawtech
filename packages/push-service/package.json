@@ -1,0 +1,43 @@
+{
+  "main": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "clean": "pnpm run clean:js",
+    "clean:js": "rimraf dist",
+    "copy-contracts": "cp ../contracts/mud.config.ts src/contracts/mud.config.ts && cp ../contracts/worlds.json src/contracts/worlds.json && cp ../contracts/out/Config.sol/Config.json src/contracts/out/Config.sol/Config.json",
+    "dev": "tsup --watch",
+    "start": "tsx src/server",
+    "bin": "./dist/server.js"
+  },
+  "exports": {
+    ".": "./dist/server.js"
+  },
+  "types": "src/server.ts",
+  "bin": {
+    "push-service": "./dist/server.js"
+  },
+  "dependencies": {
+    "@latticexyz/common": "2.0.0-next.11",
+    "@latticexyz/recs": "2.0.0-next.11",
+    "@latticexyz/store": "2.0.0-next.12",
+    "@latticexyz/store-sync": "2.0.0-next.12",
+    "@latticexyz/world": "2.0.0-next.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.11.0",
+    "prettier": "^3.0.3",
+    "tsx": "^3.14.0",
+    "viem": "1.14.0",
+    "web-push": "^3.6.6"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.2.0",
+    "@types/cors": "^2.8.15",
+    "@types/express": "^4.17.20",
+    "@types/node": "^18.18.6",
+    "@types/prettier": "^3.0.0",
+    "@types/web-push": "^3.6.2",
+    "tsup": "^6.7.0"
+  }
+}

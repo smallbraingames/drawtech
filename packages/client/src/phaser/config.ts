@@ -1,0 +1,12 @@
+export const TILE_SIZE = 50;
+export const MIN_ZOOM = 0.3;
+export const MAX_ZOOM = 3;
+export const LAZY_BUFFER = 3;
+export const LAZY_THROTTLE = 200;
+export const TAP_INTERVAL = 100;
+export const LOW_PRICE_COLOR = "#22c55e";
+export const MED_PRICE_COLOR = "#facc15";
+export const HIGH_PRICE_COLOR = "#f43f5e";
+export const NOTE_SEQUENCE = ["C#", "D", "E", "F#", "G", "A", "B"];
+export const NOTE_SEQUENCE_STARTING_OCTAVE = 2;
+export const NOTE_SEQUENCE_NUM_OCTAVES = 4;

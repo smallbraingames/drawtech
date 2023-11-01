@@ -1,0 +1,7 @@
+ds-test/=./node_modules/ds-test/src/
+forge-std/=./node_modules/forge-std/src/
+@latticexyz/=./node_modules/@latticexyz/
+solmate/=./node_modules/solmate/
+codegen/=./src/codegen/
+common/=./src/common/
+libraries/=./src/libraries/
