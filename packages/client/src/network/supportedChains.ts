@@ -5,8 +5,7 @@ import {
 } from "@latticexyz/common/chains";
 import { base, baseGoerli } from "viem/chains";
 
-const BASE_MAIN_HTTP =
-  "https://base.publicnode.com"";
+const BASE_MAIN_HTTP = "https://base.publicnode.com";
 const baseMud = {
   name: base.name,
   id: base.id,
